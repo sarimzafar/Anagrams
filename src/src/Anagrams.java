@@ -51,7 +51,7 @@ public class Anagrams {
 
          for(HashMap.Entry<Character,Integer> entry : hashMap.entrySet())
          {
-             if(entry.getValue() != 1)
+             if(entry.getValue() != 0)
                  return false;
          }
          return true;
