@@ -18,7 +18,7 @@ public class Anagrams {
             else
             {
                 int count = hashMap.get(word1.charAt(i));
-                hashMap.put(word1.charAt(i),count++);
+                hashMap.put(word1.charAt(i),++count);
             }
         }
     }
@@ -31,7 +31,7 @@ public class Anagrams {
         if(hashMap.containsKey(word2.charAt(i)))
         {
             int subcount = hashMap.get(word2.charAt(i));
-            hashMap.put(word2.charAt(i),subcount--);
+            hashMap.put(word2.charAt(i),--subcount);
         }
         else
          {
